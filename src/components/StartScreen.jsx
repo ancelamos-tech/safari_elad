@@ -1,6 +1,18 @@
 import Leaderboard from './Leaderboard'
 import { useState } from 'react'
 
+const btnStyle = {
+  background: '#ff1493',
+  color: '#000000',
+  border: '3px solid #000000',
+  padding: '15px 30px',
+  fontSize: 18,
+  fontWeight: 'bold',
+  borderRadius: 8,
+  cursor: 'pointer',
+  width: 220,
+}
+
 export default function StartScreen({ onStart }) {
   const [showBoard, setShowBoard] = useState(false)
 
@@ -9,10 +21,10 @@ export default function StartScreen({ onStart }) {
       <h1 style={{ fontSize: 36, fontWeight: 800, color: '#000000', margin: '32px 0 12px' }}>
         טריוויה שכבת אלעד
       </h1>
-      <p style={{ color: '#000000', marginBottom: 36 }}>10 שאלות אקראיות | מי הטוב ביותר?</p>
+      <p style={{ color: '#000000', marginBottom: 36 }}>15 שאלות אקראיות | מי הטוב ביותר?</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'center' }}>
-        <button className="btn" onClick={onStart} style={{ width: 220 }}>התחל משחק</button>
-        <button className="btn-outline" onClick={() => setShowBoard(v => !v)} style={{ width: 220 }}>
+        <button style={btnStyle} onClick={onStart}>התחל משחק</button>
+        <button style={{ ...btnStyle, background: 'transparent', color: '#000000' }} onClick={() => setShowBoard(v => !v)}>
           {showBoard ? 'סגור לידרבורד' : 'לידרבורד'}
         </button>
       </div>

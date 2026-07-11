@@ -11,7 +11,7 @@ function shuffle(arr) {
 }
 
 export default function GameScreen({ onFinish }) {
-  const [pool] = useState(() => shuffle(questions).slice(0, 10))
+  const [pool] = useState(() => shuffle(questions).slice(0, 15))
   const [idx, setIdx] = useState(0)
   const [selected, setSelected] = useState(null)
   const [score, setScore] = useState(0)
