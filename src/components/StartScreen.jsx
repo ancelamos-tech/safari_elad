@@ -6,7 +6,7 @@ export default function StartScreen({ onStart }) {
 
   return (
     <div style={{ textAlign: 'center', maxWidth: 480, width: '100%' }}>
-      <h1 style={{ fontSize: 36, fontWeight: 800, color: '#ec4899', margin: '32px 0 12px' }}>
+      <h1 style={{ fontSize: 36, fontWeight: 800, color: '#ff1493', margin: '32px 0 12px' }}>
         טריוויה שכבת אלעד
       </h1>
       <p style={{ color: '#888', marginBottom: 36 }}>10 שאלות אקראיות | מי היכי ביותר?</p>

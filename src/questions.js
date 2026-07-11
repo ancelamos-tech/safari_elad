@@ -67,7 +67,7 @@ export const questions = [
   {
     question: "כמה חברים כוללת תנועת הצופים כיום",
     options: ["21 מיליון", "42 מיליון", "44 מיליון", "67 מיליון"],
-    correctIndex: 2
+    correctIndex: 1
   },
   {
     question: "בכמה מדינות וטריטוריות קיימת התנועה כיום",
@@ -82,7 +82,7 @@ export const questions = [
   {
     question: "באיזה תאריך התחיל המחנה הראשון בצופים",
     options: ["1 אוגוסט", "7 אוגוסט", "22 אוקטובר", "31 מרץ"],
-    correctIndex: 1
+    correctIndex: 0
   },
   {
     question: "כמה בנים היו במחנה הראשון בצופים",
@@ -92,22 +92,22 @@ export const questions = [
   {
     question: "למשך כמה זמן היה המחנה הראשון בצופים",
     options: ["חודש", "3 ימים", "שבוע", "13 ימים"],
-    correctIndex: 3
+    correctIndex: 2
   },
   {
     question: "איפה התקיים המחנה הראשון",
     options: ["ביער ציפורי", "אי בודד בלונדון", "בבית שלי", "אנגליה"],
-    correctIndex: 1
+    correctIndex: 3
   },
   {
     question: "באיזה שנה הצטרפו הבנות לצופים",
     options: ["1909", "2007", "1910", "1907"],
-    correctIndex: 2
+    correctIndex: 0
   },
   {
     question: "באיזה שנה התקיימה אספת הצופים העולמית הראשונה",
     options: ["1907", "1910", "2007", "1909"],
-    correctIndex: 3
+    correctIndex: 1
   },
   {
     question: "איפה התקיימה אספת הצופים העולמית הראשונה",
@@ -132,7 +132,7 @@ export const questions = [
   {
     question: "מתי הוכרזה הצופים רשמית כתנועת הנוער הגדולה בעולם",
     options: ["7 אוגוסט 1907", "1 אוגוסט 2007", "7 אוגוסט 2007", "1 אוגוסט 2007"],
-    correctIndex: 0
+    correctIndex: 2
   },
   {
     question: "איזה סוגים של תחנות הציע באדן פאוול בספרו לספארי",
@@ -157,17 +157,17 @@ export const questions = [
   {
     question: "כמה חניכים כוללת תנועת הצופים העבריים כיום",
     options: ["253K", "42 מיליון", "25K", "100K"],
-    correctIndex: 0
+    correctIndex: 3
   },
   {
     question: "כמה שבטים כוללת תנועת הצופים העבריים כיום",
     options: ["220", "217", "196", "67"],
-    correctIndex: 1
+    correctIndex: 0
   },
   {
     question: "כמה הנהגות כוללת תנועת הצופים העבריים כיום",
     options: ["15", "16", "17", "18"],
-    correctIndex: 2
+    correctIndex: 1
   },
   {
     question: "באיזה שנה הוקם הקיבוץ הראשון ע\"י תנועת הצופים העבריים",
@@ -187,7 +187,7 @@ export const questions = [
   {
     question: "מהי מידת הצופה השניה",
     options: ["הצופה איש משמעת", "הצופה נאמן לעמו, למדינתו ולשפתו", "הצופה דברו אמת", "הצופה חסכן"],
-    correctIndex: 2
+    correctIndex: 1
   },
   {
     question: "מהי מידת הצופה השלישית",
@@ -197,7 +197,7 @@ export const questions = [
   {
     question: "מהי מידת הצופה הרביעית",
     options: ["הצופה דברו אמת", "הצופה אינו נופל ברוחו ובצר לו מצטחק", "הצופה אדיב", "הצופה רֵע לכל אדם ואח לכל צופה"],
-    correctIndex: 1
+    correctIndex: 3
   },
   {
     question: "מהי מידת הצופה החמישית",
@@ -207,22 +207,22 @@ export const questions = [
   {
     question: "מהי מידת הצופה השישית",
     options: ["הצופה רֵע לכל אדם ואח לכל צופה", "הצופה חובב את החי והצומח ומגן עליהם", "הצופה חבר מועיל בחברה, אוהב עבודה ועוזר לזולת", "הצופה חסכן"],
-    correctIndex: 0
+    correctIndex: 1
   },
   {
     question: "מהי מידת הצופה השביעית",
     options: ["הצופה נאמן לעמו, למדינתו ולשפתו", "הצופה אדיב", "הצופה איש משמעת", "הצופה חסכן"],
-    correctIndex: 0
+    correctIndex: 2
   },
   {
     question: "מהי מידת הצופה השמינית",
     options: ["הצופה רֵע לכל אדם ואח לכל צופה", "הצופה חבר מועיל בחברה, אוהב עבודה ועוזר לזולת", "הצופה איש משמעת", "הצופה אינו נופל ברוחו ובצר לו מצטחק"],
-    correctIndex: 2
+    correctIndex: 3
   },
   {
     question: "מהי מידת הצופה התשיעית",
     options: ["הצופה חסכן", "הצופה אינו נופל ברוחו ובצר לו מצטחק", "הצופה נאמן לעמו, למדינתו ולשפתו", "הצופה טהור בדיבורו ובמעשיו"],
-    correctIndex: 3
+    correctIndex: 0
   },
   {
     question: "מהי מידת הצופה העשירית",
@@ -232,27 +232,27 @@ export const questions = [
   {
     question: "מה השורה הראשונה בהמנון הצופה",
     options: ["היה נכון חוקתך לשמור", "נאמן לעמך ולארצך", "חוקתך הצופה שמור תשמור", "היה נכון למלא חובתך"],
-    correctIndex: 0
+    correctIndex: 2
   },
   {
     question: "מה השורה השניה בהמנון הצופה",
     options: ["היה נכון חוקתך לשמור", "בכל עת לזולת תעזור", "היה נכון למלא חובתך", "נאמן לעמך ולארצך"],
-    correctIndex: 1
+    correctIndex: 3
   },
   {
     question: "מה השורה השלישית בהמנון הצופה",
     options: ["בכל עת לזולת תעזור", "חוקתך הצופה שמור תשמור", "נאמן לעמך ולארצך", "היה נכון למלא חובתך"],
-    correctIndex: 2
+    correctIndex: 0
   },
   {
     question: "מה השורה הרביעית בהמנון הצופה",
     options: ["היה נכון למלא חובתך", "חוקתך הצופה שמור תשמור", "בכל עת לזולת תעזור", "היה נכון חוקתך לשמור"],
-    correctIndex: 0
+    correctIndex: 1
   },
   {
     question: "מה השורה השישית בהמנון הצופה",
     options: ["חוקתך הצופה שמור תשמור", "נאמן לעמך ולארצך", "היה נכון חוקתך לשמור", "בכל עת לזולת תעזור"],
-    correctIndex: 0
+    correctIndex: 2
   },
   {
     question: "באיזה שנה המנון הצופים נכתב",
@@ -292,17 +292,17 @@ export const questions = [
   {
     question: "מה הדרגה של כיתה ו",
     options: ["ניצן", "א'", "ב'", "צופה"],
-    correctIndex: 0
+    correctIndex: 2
   },
   {
     question: "מה הדרגה של כיתה י",
     options: ["ניצן", "א'", "ג'", "צופה"],
-    correctIndex: 2
+    correctIndex: 3
   },
   {
     question: "איך קוראים לשכבה של כיתה י\"א",
     options: ["בונים", "מגשימים", "סוללים", "נחשונים"],
-    correctIndex: 1
+    correctIndex: 0
   },
   {
     question: "איך קוראים לשכבה של כיתה ז",
@@ -312,17 +312,17 @@ export const questions = [
   {
     question: "מהו המעבר דרגה של כיתה ט",
     options: ["מעבר חלון", "ת\"ס", "ניהול טקס אש", "הליכת זיקית"],
-    correctIndex: 1
+    correctIndex: 2
   },
   {
     question: "מהו המעבר דרגה של כיתה ה",
     options: ["הליכת זיקית", "מעבר חלון", "ניהול טקס אש", "קפיצת נחשון"],
-    correctIndex: 1
+    correctIndex: 3
   },
   {
     question: "מה עניבה ירוקה עם פס אדום ופדרציה אומרת",
     options: ["ראש צוות פעילים", "פעיל/ה", "כיתה ה'", "מדריך/ת קורס"],
-    correctIndex: 1
+    correctIndex: 0
   },
   {
     question: "מה עניבה ירוקה עם פס אפור ופדרציה אומרת",
@@ -332,17 +332,17 @@ export const questions = [
   {
     question: "מה עניבה ירוקה עם פס ירוק אומרת",
     options: ["כיתה ט' – קורס חמישיות", "ראשג\"ד", "מדריך/ה", "מרכז/ת בוגר/ת"],
-    correctIndex: 0
+    correctIndex: 2
   },
   {
     question: "מה עניבה ירוקה עם פס אפור אומרת",
     options: ["כיתה ה'", "מרכז/ת צעיר/ה", "כיתה ח'", "מדריך/ת קורס"],
-    correctIndex: 1
+    correctIndex: 3
   },
   {
     question: "מה עניבה אפורה עם פס לבן אומרת",
     options: ["מרכז/ת בוגר/ת", "צוות הנהגה", "מדריך/ת שכבה בוגרת / שינשין", "מרכז/ת צעיר/ה"],
-    correctIndex: 2
+    correctIndex: 0
   },
   {
     question: "מה עניבה לבנה עם פס ירוק אומרת",
@@ -352,7 +352,7 @@ export const questions = [
   {
     question: "למה צריך חאקי",
     options: ["גב\"ר", "ילד\"ה", "איש\"ה", "כל התשובות נכונות"],
-    correctIndex: 3
+    correctIndex: 2
   },
   {
     question: "חאקי מדוגם כולל",
@@ -362,12 +362,12 @@ export const questions = [
   {
     question: "באיזה שנה נכנסה תנועת הצופים לתוכנית הדרכה \"המסע בצופים\"",
     options: ["2015", "2010", "1925", "1907"],
-    correctIndex: 1
+    correctIndex: 0
   },
   {
     question: "כמה שבילי מסע יש",
     options: ["4", "5", "6", "7"],
-    correctIndex: 2
+    correctIndex: 1
   },
   {
     question: "כמה תחומי צופיות יש",
@@ -377,32 +377,32 @@ export const questions = [
   {
     question: "מהם ראשי התיבות של תחומי הצופיות",
     options: ["השמע\"ה", "איש\"ה", "שדאות וטבע", "עשמע\"ה"],
-    correctIndex: 0
+    correctIndex: 3
   },
   {
     question: "כמה גרעינים יש",
     options: ["6", "7", "8", "9"],
-    correctIndex: 2
+    correctIndex: 0
   },
   {
     question: "מה תפקיד גרעין המרל\"צ",
     options: ["לפעול להפצת ערכי החינוך הצופי ברחבי ישראל", "פיתוח וקידום הדרכה", "להתאים את הכלי הצופי באופן מעשי וערכי למסגרת הפנימייה", "לפעול עבור צעירים.ות עם מוגבלות ושילובם.ן בחברה הישראלית"],
-    correctIndex: 2
+    correctIndex: 1
   },
   {
     question: "כמה הנהגות יש במרחב צפון",
     options: ["67", "4", "5", "6"],
-    correctIndex: 3
+    correctIndex: 2
   },
   {
     question: "כמה הנהגות יש במרחב מרכז",
     options: ["67", "4", "5", "6"],
-    correctIndex: 2
+    correctIndex: 3
   },
   {
     question: "כמה הנהגות יש במרחב דרום",
     options: ["5", "6", "7", "67"],
-    correctIndex: 2
+    correctIndex: 0
   },
   {
     question: "מהו השבט הצפוני ביותר בארץ ובאיזה הנהגה הוא",
@@ -412,12 +412,12 @@ export const questions = [
   {
     question: "מהו השבט הדרומי ביותר בארץ ובאיזה הנהגה הוא",
     options: ["שבט גונן – הנהגת צפון", "שבט קהילה - הנהגת חיפה", "שבט אילת – הנהגת רמת גן", "שבט אילת - הנהגת דרום"],
-    correctIndex: 3
+    correctIndex: 2
   },
   {
     question: "כמה שבטים יש בהנהגת הבקעה",
     options: ["6", "7", "8", "9"],
-    correctIndex: 1
+    correctIndex: 3
   },
   {
     question: "מה הצבעים והחיה של שבט כנען",

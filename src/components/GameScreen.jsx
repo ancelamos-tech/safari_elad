@@ -48,10 +48,10 @@ export default function GameScreen({ onFinish }) {
     <div style={{ maxWidth: 560, width: '100%' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12, color: '#888', fontSize: 14 }}>
         <span>שאלה {idx + 1} / {pool.length}</span>
-        <span style={{ color: '#ec4899', fontWeight: 700 }}>⏱ {formatTime(elapsed)}</span>
+        <span style={{ color: '#ff1493', fontWeight: 700 }}>⏱ {formatTime(elapsed)}</span>
       </div>
       <div style={{ background: '#222', borderRadius: 8, height: 6, marginBottom: 24 }}>
-        <div style={{ background: '#ec4899', height: '100%', borderRadius: 8, width: `${progress}%`, transition: 'width 0.3s' }} />
+        <div style={{ background: '#ff1493', height: '100%', borderRadius: 8, width: `${progress}%`, transition: 'width 0.3s' }} />
       </div>
       <div style={{
         background: '#111', border: '1px solid #222', borderRadius: 16,

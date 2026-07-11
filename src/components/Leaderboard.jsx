@@ -9,7 +9,7 @@ export default function Leaderboard({ style }) {
 
   return (
     <div style={{ marginTop: 32, ...style }}>
-      <h3 style={{ color: '#ec4899', marginBottom: 16, fontSize: 20 }}>🏆 לידרבורד</h3>
+      <h3 style={{ color: '#ff1493', marginBottom: 16, fontSize: 20 }}>🏆 לידרבורד</h3>
       {board.length === 0 ? (
         <p style={{ color: '#555' }}>אין תוצאות עדיין</p>
       ) : (
@@ -17,11 +17,11 @@ export default function Leaderboard({ style }) {
           {board.map((entry, i) => (
             <div key={i} style={{
               display: 'flex', alignItems: 'center', gap: 12,
-              background: i === 0 ? 'rgba(236,72,153,0.1)' : '#111',
-              border: `1px solid ${i === 0 ? '#ec4899' : '#222'}`,
+              background: i === 0 ? 'rgba(255,20,147,0.12)' : 'rgba(17,17,17,0.85)',
+              border: `1px solid ${i === 0 ? '#ff1493' : '#222'}`,
               borderRadius: 10, padding: '10px 16px',
             }}>
-              <span style={{ color: '#ec4899', fontWeight: 800, minWidth: 24, fontSize: 18 }}>
+              <span style={{ color: '#ff1493', fontWeight: 800, minWidth: 24, fontSize: 18 }}>
                 {i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}.`}
               </span>
               <span style={{ flex: 1, textAlign: 'right', fontWeight: 600 }}>{entry.name}</span>

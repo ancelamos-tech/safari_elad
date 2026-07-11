@@ -35,7 +35,7 @@ export default function ResultScreen({ result, onRestart }) {
         <div style={{ fontSize: 64, marginBottom: 8 }}>
           {pct === 100 ? '🏆' : pct >= 70 ? '⭐' : pct >= 40 ? '👍' : '💪'}
         </div>
-        <h2 style={{ fontSize: 28, fontWeight: 800, color: '#ec4899', marginBottom: 8 }}>
+        <h2 style={{ fontSize: 28, fontWeight: 800, color: '#ff1493', marginBottom: 8 }}>
           {result.score} / {result.total} נכון
         </h2>
         <p style={{ color: '#888', fontSize: 18 }}>זמן: {formatTime(result.time)}</p>

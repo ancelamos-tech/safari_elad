@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #0a0a0a;
+  background: transparent;
 }
 
 .main {
@@ -14,7 +14,7 @@
 }
 
 .btn {
-  background: #ec4899;
+  background: #ff1493;
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -26,13 +26,13 @@
   font-weight: 700;
 }
 
-.btn:hover { background: #db2777; transform: translateY(-1px); }
+.btn:hover { background: #cc1177; transform: translateY(-1px); }
 .btn:active { transform: translateY(0); }
 
 .btn-outline {
   background: transparent;
-  color: #ec4899;
-  border: 2px solid #ec4899;
+  color: #ff1493;
+  border: 2px solid #ff1493;
   border-radius: 12px;
   padding: 12px 28px;
   font-size: 16px;
