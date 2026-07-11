@@ -16,7 +16,7 @@
 .btn {
   background: #ff1493;
   color: #fff;
-  border: none;
+  border: 2px solid #000000;
   border-radius: 12px;
   padding: 14px 32px;
   font-size: 18px;
@@ -42,3 +42,20 @@
 }
 
 .btn-outline:hover { background: rgba(236,72,153,0.1); }
+
+.header-text {
+  text-align: center;
+  color: #ff1493;
+}
+
+.header-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 12px;
+  margin: 5px 0 0 0;
+  opacity: 0.8;
+}

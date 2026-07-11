@@ -3,7 +3,7 @@ export default function Header() {
     <header style={{
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       padding: '10px 28px',
       background: 'rgba(0,0,0,0.5)',
       borderBottom: '2px solid #ff1493',
@@ -12,8 +12,10 @@ export default function Header() {
       zIndex: 100,
       backdropFilter: 'blur(10px)',
     }}>
-      <img src="/safari_elad/images/text-logo.png" alt="שכבת אלעד" style={{ height: 100, objectFit: 'contain' }} />
-      <img src="/safari_elad/images/panther-logo.png" alt="פנתר" style={{ height: 80, objectFit: 'contain' }} />
+      <div className="header-text">
+        <h1>שכבת אלעד</h1>
+        <p>@AmosAncel</p>
+      </div>
     </header>
   )
 }

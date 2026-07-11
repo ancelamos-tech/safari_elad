@@ -6,10 +6,10 @@ export default function StartScreen({ onStart }) {
 
   return (
     <div style={{ textAlign: 'center', maxWidth: 480, width: '100%' }}>
-      <h1 style={{ fontSize: 36, fontWeight: 800, color: '#ff1493', margin: '32px 0 12px' }}>
+      <h1 style={{ fontSize: 36, fontWeight: 800, color: '#000000', margin: '32px 0 12px' }}>
         טריוויה שכבת אלעד
       </h1>
-      <p style={{ color: '#888', marginBottom: 36 }}>10 שאלות אקראיות | מי היכי ביותר?</p>
+      <p style={{ color: '#000000', marginBottom: 36 }}>10 שאלות אקראיות | מי הטוב ביותר?</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'center' }}>
         <button className="btn" onClick={onStart} style={{ width: 220 }}>התחל משחק</button>
         <button className="btn-outline" onClick={() => setShowBoard(v => !v)} style={{ width: 220 }}>
