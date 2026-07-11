@@ -1,18 +1,25 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-@keyframes triFloat {
-  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.15; }
-  50% { transform: translateY(-20px) rotate(5deg); opacity: 0.3; }
-}
-
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #1a1a2e;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23ff1493' stop-opacity='0.25'/%3E%3Cstop offset='100%25' stop-color='%23ff1493' stop-opacity='0.05'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='40,4 76,70 4,70' fill='url(%23g)'/%3E%3C/svg%3E");
-  background-size: 80px 80px;
+  background: radial-gradient(
+    circle,
+    #ff1493 0%,
+    #ff1493 8%,
+    #ff0099 18%,
+    #dd1474 30%,
+    #bb1154 45%,
+    #880d44 60%,
+    #440522 75%,
+    #1a0a1e 85%,
+    #000000 100%
+  );
+  min-height: 100vh;
+  background-attachment: fixed;
   color: #fff;
   direction: rtl;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
