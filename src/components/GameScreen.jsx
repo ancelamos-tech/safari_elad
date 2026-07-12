@@ -14,6 +14,7 @@ export default function GameScreen({ onFinish }) {
   const [pool] = useState(() => shuffle(questions).slice(0, 15))
   const [idx, setIdx] = useState(0)
   const [selected, setSelected] = useState(null)
+  const [hovered, setHovered] = useState(null)
   const [score, setScore] = useState(0)
   const [elapsed, setElapsed] = useState(0)
   const timerRef = useRef(null)
@@ -26,6 +27,7 @@ export default function GameScreen({ onFinish }) {
   function handleAnswer(i) {
     if (selected !== null) return
     setSelected(i)
+    setHovered(null)
     const correct = pool[idx].correctIndex === i
     const newScore = correct ? score + 1 : score
     if (correct) setScore(newScore)
@@ -37,6 +39,7 @@ export default function GameScreen({ onFinish }) {
       } else {
         setIdx(idx + 1)
         setSelected(null)
+        setHovered(null)
       }
     }, 900)
   }
@@ -61,19 +64,29 @@ export default function GameScreen({ onFinish }) {
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         {q.options.map((opt, i) => {
-          let bg = '#111'
+          let bg = hovered === i && selected === null ? '#1a1a1a' : '#111'
           let border = '#333'
+          let transform = 'scale(1)'
           if (selected !== null) {
             if (i === q.correctIndex) { bg = 'rgba(34,197,94,0.2)'; border = '#22c55e' }
             else if (i === selected) { bg = 'rgba(239,68,68,0.2)'; border = '#ef4444' }
+          } else if (hovered === i) {
+            border = '#ff1493'
+            transform = 'scale(1.01)'
           }
           return (
-            <button key={i} onClick={() => handleAnswer(i)} style={{
-              background: bg, border: `2px solid ${border}`, borderRadius: 12,
-              padding: '14px 20px', color: '#fff', fontSize: 16, fontFamily: 'inherit',
-              cursor: selected !== null ? 'default' : 'pointer', textAlign: 'right',
-              transition: 'all 0.2s',
-            }}>
+            <button
+              key={`${idx}-${i}`}
+              onClick={() => handleAnswer(i)}
+              onMouseEnter={() => selected === null && setHovered(i)}
+              onMouseLeave={() => setHovered(null)}
+              style={{
+                background: bg, border: `2px solid ${border}`, borderRadius: 12,
+                padding: '14px 20px', color: '#fff', fontSize: 16, fontFamily: 'inherit',
+                cursor: selected !== null ? 'default' : 'pointer', textAlign: 'right',
+                transition: 'all 0.15s', transform,
+              }}
+            >
               {opt}
             </button>
           )
