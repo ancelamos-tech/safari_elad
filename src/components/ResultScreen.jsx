@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import Leaderboard from './Leaderboard'
-import { db } from '../firebase-config'
-import { collection, addDoc } from 'firebase/firestore'
 
 function formatTime(s) {
   const m = Math.floor(s / 60).toString().padStart(2, '0')
@@ -9,26 +7,21 @@ function formatTime(s) {
   return `${m}:${sec}`
 }
 
+function saveScore(name, score, time) {
+  const board = JSON.parse(localStorage.getItem('leaderboard') || '[]')
+  board.push({ name, score, time, date: Date.now() })
+  board.sort((a, b) => b.score - a.score || a.time - b.time)
+  localStorage.setItem('leaderboard', JSON.stringify(board.slice(0, 50)))
+}
+
 export default function ResultScreen({ result, onRestart }) {
   const [name, setName] = useState('')
   const [saved, setSaved] = useState(false)
-  const [saving, setSaving] = useState(false)
 
-  async function handleSave() {
-    if (!name.trim() || saving) return
-    setSaving(true)
-    try {
-      await addDoc(collection(db, 'leaderboard'), {
-        name: name.trim(),
-        score: result.score,
-        time: result.time,
-        date: Date.now(),
-      })
-      setSaved(true)
-    } catch {
-      setSaved(true)
-    }
-    setSaving(false)
+  function handleSave() {
+    if (!name.trim()) return
+    saveScore(name.trim(), result.score, result.time)
+    setSaved(true)
   }
 
   const pct = Math.round((result.score / result.total) * 100)
@@ -63,9 +56,7 @@ export default function ResultScreen({ result, onRestart }) {
                 fontFamily: 'inherit', direction: 'rtl', flex: 1, maxWidth: 220,
               }}
             />
-            <button className="btn" onClick={handleSave} disabled={saving}>
-              {saving ? '...' : 'שמור'}
-            </button>
+            <button className="btn" onClick={handleSave}>שמור</button>
           </div>
         </div>
       ) : (
